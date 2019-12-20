@@ -40,21 +40,23 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class ITSystemTest {
 
   private static LanguageServiceClient client;
+  private static final String ANALYZE_TEXT =
+      "Android is a mobile operating system developed by Google, based on the Linux kernel and designed primarily for touchscreen mobile devices such as smartphones and tablets.";
 
-  @BeforeClass
-  public static void setUp() throws IOException {
+  @Before
+  public void setUp() throws IOException {
     client = LanguageServiceClient.create();
   }
 
-  @AfterClass
-  public static void tearDown() {
+  @After
+  public void tearDown() {
     client.close();
   }
 
@@ -80,12 +82,7 @@ public class ITSystemTest {
 
   @Test
   public void analyzeEntitiesTextTest() {
-    Document doc =
-        Document.newBuilder()
-            .setContent(
-                "Android is a mobile operating system developed by Google, based on the Linux kernel and designed primarily for touchscreen mobile devices such as smartphones and tablets.")
-            .setType(Type.PLAIN_TEXT)
-            .build();
+    Document doc = Document.newBuilder().setContent(ANALYZE_TEXT).setType(Type.PLAIN_TEXT).build();
     AnalyzeEntitiesRequest request =
         AnalyzeEntitiesRequest.newBuilder()
             .setDocument(doc)
@@ -276,12 +273,7 @@ public class ITSystemTest {
 
   @Test
   public void classifyTextTest() {
-    Document doc =
-        Document.newBuilder()
-            .setContent(
-                "Android is a mobile operating system developed by Google, based on the Linux kernel and designed primarily for touchscreen mobile devices such as smartphones and tablets.")
-            .setType(Type.PLAIN_TEXT)
-            .build();
+    Document doc = Document.newBuilder().setContent(ANALYZE_TEXT).setType(Type.PLAIN_TEXT).build();
     ClassifyTextRequest request = ClassifyTextRequest.newBuilder().setDocument(doc).build();
     ClassifyTextResponse response = client.classifyText(request);
     List<String> expected =
