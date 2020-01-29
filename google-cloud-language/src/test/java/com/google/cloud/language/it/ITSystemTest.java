@@ -55,7 +55,7 @@ public class ITSystemTest {
   @Before
   public void setUp() throws IOException {
     client = LanguageServiceClient.create();
-    if(System.getenv(GCS_BUCKET_ENV_VAR) != null){
+    if (System.getenv(GCS_BUCKET_ENV_VAR) != null) {
       GCS_BUCKET = System.getenv(GCS_BUCKET_ENV_VAR);
     } else {
       GCS_BUCKET = "cloud-samples-data";
