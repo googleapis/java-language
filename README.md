@@ -17,7 +17,7 @@ If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>libraries-bom</artifactId>
-      <version>3.5.0</version>
+      <version>4.1.0</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>
@@ -82,6 +82,38 @@ See the [Natural Language client library docs][javadocs] to learn how to
 use this Natural Language Client Library.
 
 
+#### Analyzing sentiment
+With Cloud Natural Language, you can analyze the sentiment of text. Add the following imports at the top of your file:
+
+``` java
+import com.google.cloud.language.v1.LanguageServiceClient;
+import com.google.cloud.language.v1.Document;
+import com.google.cloud.language.v1.Document.Type;
+import com.google.cloud.language.v1.Sentiment;
+```
+Then, to analyze the sentiment of some text, use the following code:
+
+``` java
+// Instantiates a client
+LanguageServiceClient language = LanguageServiceClient.create();
+
+// The text to analyze
+String[] texts = {"I love this!", "I hate this!"};
+for (String text : texts) {
+  Document doc = Document.newBuilder().setContent(text).setType(Type.PLAIN_TEXT).build();
+  // Detects the sentiment of the text
+  Sentiment sentiment = language.analyzeSentiment(doc).getDocumentSentiment();
+
+  System.out.printf("Text: \"%s\"%n", text);
+  System.out.printf(
+      "Sentiment: score = %s, magnitude = %s%n",
+      sentiment.getScore(), sentiment.getMagnitude());
+}
+```
+
+#### Complete source code
+
+In [AnalyzeSentiment.java](https://github.com/googleapis/google-cloud-java/blob/master/google-cloud-examples/src/main/java/com/google/cloud/examples/language/snippets/AnalyzeSentiment.java) we put the code shown above into a complete program.
 
 
 ## Troubleshooting
