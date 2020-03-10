@@ -25,11 +25,11 @@ versions = ['v1', 'v1beta2']
 config_pattern = '/google/cloud/language/artman_language_{version}.yaml'
 
 for version in versions:
-    library = gapic.java_library(
+    library = java.bazel_library(
         service=service,
         version=version,
-        config_path=config_pattern.format(version=version),
-        artman_output_name='')
+        bazel_target=f'//google/cloud/{service}/{version}:google-cloud-{service}-{version}-java',
+    )
 
     package_name = f'com.google.cloud.{service}.{version}'
     java.fix_proto_headers(library / f'proto-google-cloud-{service}-{version}')
