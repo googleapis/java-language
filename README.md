@@ -38,12 +38,10 @@ If you are using Maven without BOM, add this to your dependencies:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-language</artifactId>
-  <version>1.101.2</version>
+  <version>1.101.3</version>
 </dependency>
 
 ```
-
-[//]: # ({x-version-update-start:google-cloud-language:released})
 
 If you are using Gradle, add this to your dependencies
 ```Groovy
@@ -53,7 +51,6 @@ If you are using SBT, add this to your dependencies
 ```Scala
 libraryDependencies += "com.google.cloud" % "google-cloud-language" % "1.101.3"
 ```
-[//]: # ({x-version-update-end})
 
 ## Authentication
 
