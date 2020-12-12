@@ -22,7 +22,14 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/** */
+/**
+ *
+ *
+ * <pre>
+ * Provides text analysis operations such as sentiment analysis and entity
+ * recognition.
+ * </pre>
+ */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/language/v1beta2/language_service.proto")
@@ -359,10 +366,23 @@ public final class LanguageServiceGrpc {
     return LanguageServiceFutureStub.newStub(factory, channel);
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Provides text analysis operations such as sentiment analysis and entity
+   * recognition.
+   * </pre>
+   */
   public abstract static class LanguageServiceImplBase implements io.grpc.BindableService {
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Analyzes the sentiment of the provided text.
+     * </pre>
+     */
     public void analyzeSentiment(
         com.google.cloud.language.v1beta2.AnalyzeSentimentRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.AnalyzeSentimentResponse>
@@ -370,7 +390,15 @@ public final class LanguageServiceGrpc {
       asyncUnimplementedUnaryCall(getAnalyzeSentimentMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Finds named entities (currently proper names and common nouns) in the text
+     * along with entity types, salience, mentions for each entity, and
+     * other properties.
+     * </pre>
+     */
     public void analyzeEntities(
         com.google.cloud.language.v1beta2.AnalyzeEntitiesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.AnalyzeEntitiesResponse>
@@ -378,7 +406,14 @@ public final class LanguageServiceGrpc {
       asyncUnimplementedUnaryCall(getAnalyzeEntitiesMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Finds entities, similar to [AnalyzeEntities][google.cloud.language.v1beta2.LanguageService.AnalyzeEntities] in the text and analyzes
+     * sentiment associated with each entity and its mentions.
+     * </pre>
+     */
     public void analyzeEntitySentiment(
         com.google.cloud.language.v1beta2.AnalyzeEntitySentimentRequest request,
         io.grpc.stub.StreamObserver<
@@ -387,7 +422,15 @@ public final class LanguageServiceGrpc {
       asyncUnimplementedUnaryCall(getAnalyzeEntitySentimentMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Analyzes the syntax of the text and provides sentence boundaries and
+     * tokenization along with part-of-speech tags, dependency trees, and other
+     * properties.
+     * </pre>
+     */
     public void analyzeSyntax(
         com.google.cloud.language.v1beta2.AnalyzeSyntaxRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.AnalyzeSyntaxResponse>
@@ -395,7 +438,13 @@ public final class LanguageServiceGrpc {
       asyncUnimplementedUnaryCall(getAnalyzeSyntaxMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Classifies a document into categories.
+     * </pre>
+     */
     public void classifyText(
         com.google.cloud.language.v1beta2.ClassifyTextRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.ClassifyTextResponse>
@@ -403,7 +452,14 @@ public final class LanguageServiceGrpc {
       asyncUnimplementedUnaryCall(getClassifyTextMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * A convenience method that provides all syntax, sentiment, entity, and
+     * classification features in one call.
+     * </pre>
+     */
     public void annotateText(
         com.google.cloud.language.v1beta2.AnnotateTextRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.AnnotateTextResponse>
@@ -460,7 +516,14 @@ public final class LanguageServiceGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Provides text analysis operations such as sentiment analysis and entity
+   * recognition.
+   * </pre>
+   */
   public static final class LanguageServiceStub
       extends io.grpc.stub.AbstractAsyncStub<LanguageServiceStub> {
     private LanguageServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -472,7 +535,13 @@ public final class LanguageServiceGrpc {
       return new LanguageServiceStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Analyzes the sentiment of the provided text.
+     * </pre>
+     */
     public void analyzeSentiment(
         com.google.cloud.language.v1beta2.AnalyzeSentimentRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.AnalyzeSentimentResponse>
@@ -483,7 +552,15 @@ public final class LanguageServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Finds named entities (currently proper names and common nouns) in the text
+     * along with entity types, salience, mentions for each entity, and
+     * other properties.
+     * </pre>
+     */
     public void analyzeEntities(
         com.google.cloud.language.v1beta2.AnalyzeEntitiesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.AnalyzeEntitiesResponse>
@@ -494,7 +571,14 @@ public final class LanguageServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Finds entities, similar to [AnalyzeEntities][google.cloud.language.v1beta2.LanguageService.AnalyzeEntities] in the text and analyzes
+     * sentiment associated with each entity and its mentions.
+     * </pre>
+     */
     public void analyzeEntitySentiment(
         com.google.cloud.language.v1beta2.AnalyzeEntitySentimentRequest request,
         io.grpc.stub.StreamObserver<
@@ -506,7 +590,15 @@ public final class LanguageServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Analyzes the syntax of the text and provides sentence boundaries and
+     * tokenization along with part-of-speech tags, dependency trees, and other
+     * properties.
+     * </pre>
+     */
     public void analyzeSyntax(
         com.google.cloud.language.v1beta2.AnalyzeSyntaxRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.AnalyzeSyntaxResponse>
@@ -517,7 +609,13 @@ public final class LanguageServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Classifies a document into categories.
+     * </pre>
+     */
     public void classifyText(
         com.google.cloud.language.v1beta2.ClassifyTextRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.ClassifyTextResponse>
@@ -528,7 +626,14 @@ public final class LanguageServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * A convenience method that provides all syntax, sentiment, entity, and
+     * classification features in one call.
+     * </pre>
+     */
     public void annotateText(
         com.google.cloud.language.v1beta2.AnnotateTextRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.language.v1beta2.AnnotateTextResponse>
@@ -540,7 +645,14 @@ public final class LanguageServiceGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Provides text analysis operations such as sentiment analysis and entity
+   * recognition.
+   * </pre>
+   */
   public static final class LanguageServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<LanguageServiceBlockingStub> {
     private LanguageServiceBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -553,46 +665,95 @@ public final class LanguageServiceGrpc {
       return new LanguageServiceBlockingStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Analyzes the sentiment of the provided text.
+     * </pre>
+     */
     public com.google.cloud.language.v1beta2.AnalyzeSentimentResponse analyzeSentiment(
         com.google.cloud.language.v1beta2.AnalyzeSentimentRequest request) {
       return blockingUnaryCall(
           getChannel(), getAnalyzeSentimentMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Finds named entities (currently proper names and common nouns) in the text
+     * along with entity types, salience, mentions for each entity, and
+     * other properties.
+     * </pre>
+     */
     public com.google.cloud.language.v1beta2.AnalyzeEntitiesResponse analyzeEntities(
         com.google.cloud.language.v1beta2.AnalyzeEntitiesRequest request) {
       return blockingUnaryCall(getChannel(), getAnalyzeEntitiesMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Finds entities, similar to [AnalyzeEntities][google.cloud.language.v1beta2.LanguageService.AnalyzeEntities] in the text and analyzes
+     * sentiment associated with each entity and its mentions.
+     * </pre>
+     */
     public com.google.cloud.language.v1beta2.AnalyzeEntitySentimentResponse analyzeEntitySentiment(
         com.google.cloud.language.v1beta2.AnalyzeEntitySentimentRequest request) {
       return blockingUnaryCall(
           getChannel(), getAnalyzeEntitySentimentMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Analyzes the syntax of the text and provides sentence boundaries and
+     * tokenization along with part-of-speech tags, dependency trees, and other
+     * properties.
+     * </pre>
+     */
     public com.google.cloud.language.v1beta2.AnalyzeSyntaxResponse analyzeSyntax(
         com.google.cloud.language.v1beta2.AnalyzeSyntaxRequest request) {
       return blockingUnaryCall(getChannel(), getAnalyzeSyntaxMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Classifies a document into categories.
+     * </pre>
+     */
     public com.google.cloud.language.v1beta2.ClassifyTextResponse classifyText(
         com.google.cloud.language.v1beta2.ClassifyTextRequest request) {
       return blockingUnaryCall(getChannel(), getClassifyTextMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * A convenience method that provides all syntax, sentiment, entity, and
+     * classification features in one call.
+     * </pre>
+     */
     public com.google.cloud.language.v1beta2.AnnotateTextResponse annotateText(
         com.google.cloud.language.v1beta2.AnnotateTextRequest request) {
       return blockingUnaryCall(getChannel(), getAnnotateTextMethod(), getCallOptions(), request);
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Provides text analysis operations such as sentiment analysis and entity
+   * recognition.
+   * </pre>
+   */
   public static final class LanguageServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<LanguageServiceFutureStub> {
     private LanguageServiceFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -605,7 +766,13 @@ public final class LanguageServiceGrpc {
       return new LanguageServiceFutureStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Analyzes the sentiment of the provided text.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.language.v1beta2.AnalyzeSentimentResponse>
         analyzeSentiment(com.google.cloud.language.v1beta2.AnalyzeSentimentRequest request) {
@@ -613,7 +780,15 @@ public final class LanguageServiceGrpc {
           getChannel().newCall(getAnalyzeSentimentMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Finds named entities (currently proper names and common nouns) in the text
+     * along with entity types, salience, mentions for each entity, and
+     * other properties.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.language.v1beta2.AnalyzeEntitiesResponse>
         analyzeEntities(com.google.cloud.language.v1beta2.AnalyzeEntitiesRequest request) {
@@ -621,7 +796,14 @@ public final class LanguageServiceGrpc {
           getChannel().newCall(getAnalyzeEntitiesMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Finds entities, similar to [AnalyzeEntities][google.cloud.language.v1beta2.LanguageService.AnalyzeEntities] in the text and analyzes
+     * sentiment associated with each entity and its mentions.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.language.v1beta2.AnalyzeEntitySentimentResponse>
         analyzeEntitySentiment(
@@ -630,7 +812,15 @@ public final class LanguageServiceGrpc {
           getChannel().newCall(getAnalyzeEntitySentimentMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Analyzes the syntax of the text and provides sentence boundaries and
+     * tokenization along with part-of-speech tags, dependency trees, and other
+     * properties.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.language.v1beta2.AnalyzeSyntaxResponse>
         analyzeSyntax(com.google.cloud.language.v1beta2.AnalyzeSyntaxRequest request) {
@@ -638,7 +828,13 @@ public final class LanguageServiceGrpc {
           getChannel().newCall(getAnalyzeSyntaxMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Classifies a document into categories.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.language.v1beta2.ClassifyTextResponse>
         classifyText(com.google.cloud.language.v1beta2.ClassifyTextRequest request) {
@@ -646,7 +842,14 @@ public final class LanguageServiceGrpc {
           getChannel().newCall(getClassifyTextMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * A convenience method that provides all syntax, sentiment, entity, and
+     * classification features in one call.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.language.v1beta2.AnnotateTextResponse>
         annotateText(com.google.cloud.language.v1beta2.AnnotateTextRequest request) {
