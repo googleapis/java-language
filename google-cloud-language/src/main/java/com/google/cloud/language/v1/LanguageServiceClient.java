@@ -154,7 +154,7 @@ public class LanguageServiceClient implements BackgroundResource {
    * Analyzes the sentiment of the provided text.
    *
    * @param document Input document.
-   * @param encoding_type The encoding type used by the API to calculate sentence offsets.
+   * @param encodingType The encoding type used by the API to calculate sentence offsets.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final AnalyzeSentimentResponse analyzeSentiment(
@@ -209,7 +209,7 @@ public class LanguageServiceClient implements BackgroundResource {
    * types, salience, mentions for each entity, and other properties.
    *
    * @param document Input document.
-   * @param encoding_type The encoding type used by the API to calculate offsets.
+   * @param encodingType The encoding type used by the API to calculate offsets.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final AnalyzeEntitiesResponse analyzeEntities(
@@ -268,7 +268,7 @@ public class LanguageServiceClient implements BackgroundResource {
    * analyzes sentiment associated with each entity and its mentions.
    *
    * @param document Input document.
-   * @param encoding_type The encoding type used by the API to calculate offsets.
+   * @param encodingType The encoding type used by the API to calculate offsets.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final AnalyzeEntitySentimentResponse analyzeEntitySentiment(
@@ -327,7 +327,7 @@ public class LanguageServiceClient implements BackgroundResource {
    * part of speech tags, dependency trees, and other properties.
    *
    * @param document Input document.
-   * @param encoding_type The encoding type used by the API to calculate offsets.
+   * @param encodingType The encoding type used by the API to calculate offsets.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final AnalyzeSyntaxResponse analyzeSyntax(Document document, EncodingType encodingType) {
@@ -418,7 +418,7 @@ public class LanguageServiceClient implements BackgroundResource {
    *
    * @param document Input document.
    * @param features The enabled features.
-   * @param encoding_type The encoding type used by the API to calculate offsets.
+   * @param encodingType The encoding type used by the API to calculate offsets.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final AnnotateTextResponse annotateText(
