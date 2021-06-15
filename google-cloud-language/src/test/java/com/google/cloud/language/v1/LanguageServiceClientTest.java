@@ -42,7 +42,6 @@ import org.junit.Test;
 public class LanguageServiceClientTest {
   private static MockLanguageService mockLanguageService;
   private static MockServiceHelper mockServiceHelper;
-  private LanguageServiceClient client;
   private LocalChannelProvider channelProvider;
   private LanguageServiceClient client;
 
