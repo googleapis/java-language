@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.104.0](https://www.github.com/googleapis/java-language/compare/v1.103.2...v1.104.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#673](https://www.github.com/googleapis/java-language/issues/673)) ([c3d688b](https://www.github.com/googleapis/java-language/commit/c3d688b8bec9bcca32d075f60aa8b4a695f7babd))
+
 ### [1.103.2](https://www.github.com/googleapis/java-language/compare/v1.103.1...v1.103.2) (2021-07-01)
 
 
