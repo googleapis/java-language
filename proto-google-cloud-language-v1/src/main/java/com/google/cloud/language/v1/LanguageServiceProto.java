@@ -472,8 +472,7 @@ public final class LanguageServiceProto {
           + "ud.language.v1.AnalyzeSyntaxResponse\"J\202\323\344\223\002"
           + " \"\033/v1/documents:analyzeSyntax:\001*\332A\026document,encoding_type\332A\010document\022\237\001\n"
           + "\014ClassifyText\022-.google.cloud.language.v1.ClassifyTextRequest\032..google.cloud.language.v1.ClassifyTextResponse\"0\202\323\344\223\002\037\"\032/v1/documents:classifyText:\001*\332A\010document\022\312\001\n"
-          + "\014AnnotateText\022-.google.cloud.language.v1.A"
-          + "nnotateTextRequest\032..google.cloud.language.v1.AnnotateTextResponse\"[\202\323\344\223\002\037\"\032/v1/documents:annotateText:\001*\332A\037document,features,encoding_type\332A\021document,features\032z\312A\027language.googleapis.com\322A]https://www.googleapis.com/auth/cloud-language,https://www.googleapis.com/auth/cloud-platformBx\n"
+          + "\014AnnotateText\022-.google.cloud.language.v1.AnnotateTextRequest\032..google.cloud.language.v1.AnnotateTextResponse\"[\202\323\344\223\002\037\"\032/v1/documents:annotateText:\001*\332A\037document,features,encoding_type\332A\021document,features\032z\312A\027language.googleapis.com\322A]https://www.googleapis.com/auth/cloud-language,https://www.googleapis.com/auth/cloud-platformBx\n"
           + "\034com.google.cloud.language.v1B\024LanguageServiceProtoP\001Z@google.golang.org/g"
           + "enproto/googleapis/cloud/language/v1;languageb\006proto3"
     };
