@@ -62,7 +62,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-language-v1beta2</artifactId>
-        <version>0.88.4-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-language-v1beta2:current} -->
+        <version>2.1.4-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-language-v1beta2:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -72,7 +72,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-language-v1beta2</artifactId>
-        <version>0.88.4-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-language-v1beta2:current} -->
+        <version>2.1.4-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-language-v1beta2:current} -->
       </dependency>
     </dependencies>
   </dependencyManagement>
