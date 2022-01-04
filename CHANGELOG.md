@@ -1,5 +1,13 @@
 # Changelog
 
+### [2.1.5](https://github.com/googleapis/java-language/compare/v2.1.4...v2.1.5) (2022-01-04)
+
+
+### Bug Fixes
+
+* **java:** add -ntp flag to native image testing command ([#1299](https://github.com/googleapis/java-language/issues/1299)) ([#764](https://github.com/googleapis/java-language/issues/764)) ([43a006a](https://github.com/googleapis/java-language/commit/43a006a2a77c25a16e9d4034bc155bb5773257fb))
+* **java:** run Maven in plain console-friendly mode ([#1301](https://github.com/googleapis/java-language/issues/1301)) ([#770](https://github.com/googleapis/java-language/issues/770)) ([e4cd369](https://github.com/googleapis/java-language/commit/e4cd369220848f7d0bfd9c1be96c975237b54869))
+
 ### [2.1.4](https://www.github.com/googleapis/java-language/compare/v2.1.3...v2.1.4) (2021-12-03)
 
 
