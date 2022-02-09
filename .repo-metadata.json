@@ -1,10 +1,10 @@
 {
-    "name": "language",
+    "api_shortname": "language",
     "name_pretty": "Natural Language",
     "product_documentation": "https://cloud.google.com/natural-language/docs/",
     "client_documentation": "https://cloud.google.com/java/docs/reference/google-cloud-language/latest/history",
     "issue_tracker": "https://issuetracker.google.com/savedsearches/559753",
-    "release_level": "ga",
+    "release_level": "stable",
     "language": "java",
     "repo": "googleapis/java-language",
     "repo_short": "java-language",
