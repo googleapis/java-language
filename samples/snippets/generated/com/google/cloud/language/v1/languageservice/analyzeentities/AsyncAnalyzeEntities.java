@@ -16,31 +16,37 @@
 
 package com.google.cloud.language.v1.samples;
 
-// [START language_v1_generated_LanguageServiceSettings_AnalyzeSentiment_sync]
-import com.google.cloud.language.v1.LanguageServiceSettings;
-import java.time.Duration;
+// [START language_v1_generated_LanguageService_AnalyzeEntities_async]
+import com.google.api.core.ApiFuture;
+import com.google.cloud.language.v1.AnalyzeEntitiesRequest;
+import com.google.cloud.language.v1.AnalyzeEntitiesResponse;
+import com.google.cloud.language.v1.Document;
+import com.google.cloud.language.v1.EncodingType;
+import com.google.cloud.language.v1.LanguageServiceClient;
 
-public class SyncAnalyzeSentiment {
+public class AsyncAnalyzeEntities {
 
   public static void main(String[] args) throws Exception {
-    syncAnalyzeSentiment();
+    asyncAnalyzeEntities();
   }
 
-  public static void syncAnalyzeSentiment() throws Exception {
+  public static void asyncAnalyzeEntities() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    LanguageServiceSettings.Builder languageServiceSettingsBuilder =
-        LanguageServiceSettings.newBuilder();
-    languageServiceSettingsBuilder
-        .analyzeSentimentSettings()
-        .setRetrySettings(
-            languageServiceSettingsBuilder.analyzeSentimentSettings().getRetrySettings().toBuilder()
-                .setTotalTimeout(Duration.ofSeconds(30))
-                .build());
-    LanguageServiceSettings languageServiceSettings = languageServiceSettingsBuilder.build();
+    try (LanguageServiceClient languageServiceClient = LanguageServiceClient.create()) {
+      AnalyzeEntitiesRequest request =
+          AnalyzeEntitiesRequest.newBuilder()
+              .setDocument(Document.newBuilder().build())
+              .setEncodingType(EncodingType.forNumber(0))
+              .build();
+      ApiFuture<AnalyzeEntitiesResponse> future =
+          languageServiceClient.analyzeEntitiesCallable().futureCall(request);
+      // Do something.
+      AnalyzeEntitiesResponse response = future.get();
+    }
   }
 }
-// [END language_v1_generated_LanguageServiceSettings_AnalyzeSentiment_sync]
+// [END language_v1_generated_LanguageService_AnalyzeEntities_async]

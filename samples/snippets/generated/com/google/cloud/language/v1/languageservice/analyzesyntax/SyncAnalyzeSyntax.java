@@ -14,33 +14,35 @@
  * limitations under the License.
  */
 
-package com.google.cloud.language.v1beta2.stub.samples;
+package com.google.cloud.language.v1.samples;
 
-// [START language_v1beta2_generated_LanguageServiceStubSettings_AnalyzeSentiment_sync]
-import com.google.cloud.language.v1beta2.stub.LanguageServiceStubSettings;
-import java.time.Duration;
+// [START language_v1_generated_LanguageService_AnalyzeSyntax_sync]
+import com.google.cloud.language.v1.AnalyzeSyntaxRequest;
+import com.google.cloud.language.v1.AnalyzeSyntaxResponse;
+import com.google.cloud.language.v1.Document;
+import com.google.cloud.language.v1.EncodingType;
+import com.google.cloud.language.v1.LanguageServiceClient;
 
-public class SyncAnalyzeSentiment {
+public class SyncAnalyzeSyntax {
 
   public static void main(String[] args) throws Exception {
-    syncAnalyzeSentiment();
+    syncAnalyzeSyntax();
   }
 
-  public static void syncAnalyzeSentiment() throws Exception {
+  public static void syncAnalyzeSyntax() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    LanguageServiceStubSettings.Builder languageServiceSettingsBuilder =
-        LanguageServiceStubSettings.newBuilder();
-    languageServiceSettingsBuilder
-        .analyzeSentimentSettings()
-        .setRetrySettings(
-            languageServiceSettingsBuilder.analyzeSentimentSettings().getRetrySettings().toBuilder()
-                .setTotalTimeout(Duration.ofSeconds(30))
-                .build());
-    LanguageServiceStubSettings languageServiceSettings = languageServiceSettingsBuilder.build();
+    try (LanguageServiceClient languageServiceClient = LanguageServiceClient.create()) {
+      AnalyzeSyntaxRequest request =
+          AnalyzeSyntaxRequest.newBuilder()
+              .setDocument(Document.newBuilder().build())
+              .setEncodingType(EncodingType.forNumber(0))
+              .build();
+      AnalyzeSyntaxResponse response = languageServiceClient.analyzeSyntax(request);
+    }
   }
 }
-// [END language_v1beta2_generated_LanguageServiceStubSettings_AnalyzeSentiment_sync]
+// [END language_v1_generated_LanguageService_AnalyzeSyntax_sync]

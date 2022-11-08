@@ -14,33 +14,32 @@
  * limitations under the License.
  */
 
-package com.google.cloud.language.v1beta2.stub.samples;
+package com.google.cloud.language.v1.samples;
 
-// [START language_v1beta2_generated_LanguageServiceStubSettings_AnalyzeSentiment_sync]
-import com.google.cloud.language.v1beta2.stub.LanguageServiceStubSettings;
-import java.time.Duration;
+// [START language_v1_generated_LanguageService_Create_SetCredentialsProvider_sync]
+import com.google.api.gax.core.FixedCredentialsProvider;
+import com.google.cloud.language.v1.LanguageServiceClient;
+import com.google.cloud.language.v1.LanguageServiceSettings;
+import com.google.cloud.language.v1.myCredentials;
 
-public class SyncAnalyzeSentiment {
+public class SyncCreateSetCredentialsProvider {
 
   public static void main(String[] args) throws Exception {
-    syncAnalyzeSentiment();
+    syncCreateSetCredentialsProvider();
   }
 
-  public static void syncAnalyzeSentiment() throws Exception {
+  public static void syncCreateSetCredentialsProvider() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    LanguageServiceStubSettings.Builder languageServiceSettingsBuilder =
-        LanguageServiceStubSettings.newBuilder();
-    languageServiceSettingsBuilder
-        .analyzeSentimentSettings()
-        .setRetrySettings(
-            languageServiceSettingsBuilder.analyzeSentimentSettings().getRetrySettings().toBuilder()
-                .setTotalTimeout(Duration.ofSeconds(30))
-                .build());
-    LanguageServiceStubSettings languageServiceSettings = languageServiceSettingsBuilder.build();
+    LanguageServiceSettings languageServiceSettings =
+        LanguageServiceSettings.newBuilder()
+            .setCredentialsProvider(FixedCredentialsProvider.create(myCredentials))
+            .build();
+    LanguageServiceClient languageServiceClient =
+        LanguageServiceClient.create(languageServiceSettings);
   }
 }
-// [END language_v1beta2_generated_LanguageServiceStubSettings_AnalyzeSentiment_sync]
+// [END language_v1_generated_LanguageService_Create_SetCredentialsProvider_sync]
