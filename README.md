@@ -63,13 +63,13 @@ implementation 'com.google.cloud:google-cloud-language'
 If you are using Gradle without BOM, add this to your dependencies:
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-language:2.6.0'
+implementation 'com.google.cloud:google-cloud-language:2.7.0'
 ```
 
 If you are using SBT, add this to your dependencies:
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-language" % "2.6.0"
+libraryDependencies += "com.google.cloud" % "google-cloud-language" % "2.7.0"
 ```
 
 ## Authentication
@@ -146,9 +146,6 @@ Samples are in the [`samples/`](https://github.com/googleapis/java-language/tree
 | Sample                      | Source Code                       | Try it |
 | --------------------------- | --------------------------------- | ------ |
 | Analyze Beta | [source code](https://github.com/googleapis/java-language/blob/main/samples/snippets/src/main/java/beta/example/language/AnalyzeBeta.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-language&page=editor&open_in_editor=samples/snippets/src/main/java/beta/example/language/AnalyzeBeta.java) |
-| Analyze | [source code](https://github.com/googleapis/java-language/blob/main/samples/snippets/src/main/java/com/example/language/Analyze.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-language&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/language/Analyze.java) |
-| Quickstart Sample | [source code](https://github.com/googleapis/java-language/blob/main/samples/snippets/src/main/java/com/example/language/QuickstartSample.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-language&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/language/QuickstartSample.java) |
-| Set Endpoint | [source code](https://github.com/googleapis/java-language/blob/main/samples/snippets/src/main/java/com/example/language/SetEndpoint.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-language&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/language/SetEndpoint.java) |
 
 
 
