@@ -38,7 +38,7 @@ public class AnalyzeBeta {
       System.err.println("Usage:");
       System.err.printf(
           "\tjava %s \"command\" \"text to analyze\" \"language\" \n",
-          Analyze.class.getCanonicalName());
+          AnalyzeBeta.class.getCanonicalName());
       System.exit(1);
     }
     String command = args[0];
