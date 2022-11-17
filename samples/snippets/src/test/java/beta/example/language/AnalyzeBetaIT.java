@@ -18,7 +18,6 @@ package beta.example.language;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.example.language.Analyze;
 import com.google.cloud.language.v1beta2.Sentiment;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

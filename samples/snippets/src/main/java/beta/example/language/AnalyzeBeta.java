@@ -16,7 +16,6 @@
 
 package beta.example.language;
 
-import com.example.language.Analyze;
 import com.google.cloud.language.v1beta2.AnalyzeSentimentResponse;
 import com.google.cloud.language.v1beta2.ClassificationCategory;
 import com.google.cloud.language.v1beta2.ClassifyTextRequest;
