@@ -16,7 +16,6 @@
 
 package beta.example.language;
 
-import com.example.language.Analyze;
 import com.google.cloud.language.v1beta2.AnalyzeSentimentResponse;
 import com.google.cloud.language.v1beta2.ClassificationCategory;
 import com.google.cloud.language.v1beta2.ClassifyTextRequest;
@@ -38,7 +37,7 @@ public class AnalyzeBeta {
       System.err.println("Usage:");
       System.err.printf(
           "\tjava %s \"command\" \"text to analyze\" \"language\" \n",
-          Analyze.class.getCanonicalName());
+          AnalyzeBeta.class.getCanonicalName());
       System.exit(1);
     }
     String command = args[0];

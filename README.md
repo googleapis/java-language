@@ -146,9 +146,6 @@ Samples are in the [`samples/`](https://github.com/googleapis/java-language/tree
 | Sample                      | Source Code                       | Try it |
 | --------------------------- | --------------------------------- | ------ |
 | Analyze Beta | [source code](https://github.com/googleapis/java-language/blob/main/samples/snippets/src/main/java/beta/example/language/AnalyzeBeta.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-language&page=editor&open_in_editor=samples/snippets/src/main/java/beta/example/language/AnalyzeBeta.java) |
-| Analyze | [source code](https://github.com/googleapis/java-language/blob/main/samples/snippets/src/main/java/com/example/language/Analyze.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-language&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/language/Analyze.java) |
-| Quickstart Sample | [source code](https://github.com/googleapis/java-language/blob/main/samples/snippets/src/main/java/com/example/language/QuickstartSample.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-language&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/language/QuickstartSample.java) |
-| Set Endpoint | [source code](https://github.com/googleapis/java-language/blob/main/samples/snippets/src/main/java/com/example/language/SetEndpoint.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-language&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/language/SetEndpoint.java) |
 
 
 

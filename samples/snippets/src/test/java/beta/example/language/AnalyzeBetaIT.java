@@ -18,7 +18,6 @@ package beta.example.language;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.example.language.Analyze;
 import com.google.cloud.language.v1beta2.Sentiment;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -28,7 +27,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-/** Integration (system) tests for {@link Analyze}. */
+/** Integration (system) tests for {@link AnalyzeBeta}. */
 @RunWith(JUnit4.class)
 @SuppressWarnings("checkstyle:abbreviationaswordinname")
 public class AnalyzeBetaIT {
