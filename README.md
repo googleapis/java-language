@@ -9,6 +9,13 @@ Java idiomatic client for [Natural Language][product-docs].
 - [Client Library Documentation][javadocs]
 
 
+:bus: In October 2022, this library has moved to
+[google-cloud-java/java-language](
+https://github.com/googleapis/google-cloud-java/tree/main/java-language).
+This repository will be archived in the future.
+Future releases will appear in the new repository (https://github.com/googleapis/google-cloud-java/releases).
+The Maven artifact coordinates (`com.google.cloud:google-cloud-language`) remain the same.
+
 ## Quickstart
 
 If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file:
@@ -19,7 +26,7 @@ If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file:
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>libraries-bom</artifactId>
-      <version>26.1.3</version>
+      <version>26.1.4</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>
